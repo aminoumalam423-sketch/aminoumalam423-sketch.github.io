@@ -7,24 +7,24 @@
 
 /* 1. VARIABLES GLOBALES */
 
-:root {
+:root { 
     --background: #081222;
     --background-secondary: #0D1A2D;
     --surface: #13233A;
     --surface-light: #1A2D47;
 
     --primary: #35A879;
-    --primary-light: #49C493;
-    --primary-dark: #237B59;
+     --primary-light: #49C493; 
+     --primary-dark: #237B59;
 
     --accent: #D5A45F;
     --accent-light: #E8BD7D;
 
     --text: #F1F5FA;
     --text-secondary: #B7C4D5;
-    --text-muted: #8494A9;
+    --text-muted: #8494A9; 
 
-    --border: rgba(173, 195, 220, 0.13);
+     --border: rgba(173, 195, 220, 0.13);
     --border-hover: rgba(73, 196, 147, 0.45);
 
     --shadow: 0 15px 40px rgba(0, 0, 0, 0.22);
@@ -36,7 +36,7 @@
 
     --container: 1180px;
     --transition: all 0.3s ease;
-}
+} 
 
 /* 2. RESET ET BASE */
 
@@ -56,11 +56,12 @@ body {
     min-height: 100vh;
     position: relative;
     isolation: isolate;
-    background:
+    background-color: #011453;
+    /* background:
         radial-gradient(ellipse at 15% 5%, rgba(35, 123, 89, 0.13), transparent 35%),
         radial-gradient(ellipse at 90% 40%, rgba(50, 91, 140, 0.10), transparent 35%),
         var(--background);
-    color: var(--text);
+    color: var(--text); */
     font-family: "DM Sans", sans-serif;
     line-height: 1.7;
     overflow-x: hidden;
@@ -109,17 +110,17 @@ section {
     top: 0;
     left: 0;
     z-index: 1000;
-    background: rgba(8, 18, 34, 0.88);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    border-bottom: 1px solid var(--border);
+    /* background: rgba(8, 18, 34, 0.88); */
+    /* backdrop-filter: blur(20px); */
+    /* -webkit-backdrop-filter: blur(20px); */
+    border-bottom: 3px solid var(--border);
     transition: var(--transition);
 }
 
 .header.scrolled {
     height: 72px;
-    background: rgba(8, 18, 34, 0.97);
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+    background: rgba(3, 85, 109, 0.97);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
 }
 
 .logo {
@@ -134,8 +135,8 @@ section {
 }
 
 .logo img {
-    width: 42px;
-    height: 42px;
+    width: 60px;
+    height: 60px;
     object-fit: cover;
     border-radius: 50%;
 }
@@ -370,6 +371,11 @@ section {
     position: relative;
     z-index: 2;
     box-shadow: var(--shadow);
+}
+
+.hero p strong{
+    color:#fff;
+    font-weight: bold;
 }
 
 /* Cartes flottantes */
@@ -948,6 +954,7 @@ section {
     margin-bottom: 15px;
 }
 
+
 .cv-introduction {
     color: var(--text-secondary);
     font-size: 13px;
@@ -1165,7 +1172,7 @@ section {
     align-items: center;
     gap: 18px;
     background: transparent;
-    border-top: 1px solid rgba(66, 230, 164, 0.2);
+    border-top: 2px solid white;
 }
 
 .footer-name {
@@ -1442,7 +1449,7 @@ section {
     }
 
     .hero-image-wrapper {
-        width: 78%;
+        width: 100%;
     }
 
     .floating-card {
