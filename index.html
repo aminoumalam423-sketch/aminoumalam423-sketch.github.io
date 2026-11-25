@@ -29,7 +29,7 @@
 
         <a href="#accueil" class="logo" aria-label="Accueil">
     
-            <img src="images/AMIN.png" alt="mon logo">
+            <img src="images/AMIN.png" alt="">
         </a>
 
         <button class="menu-toggle"
@@ -64,7 +64,8 @@
 
                 <div class="hero-text">
 
-                    <p class="hero-subtitle">BONJOUR, JE SUIS</p>
+                    <p class="hero-subtitle"><span class="auto-typing-multi" data-text="Hello, I am ; Bonjour, je suis"></span></p>
+
 
                     <h1>
                         AMINOU
@@ -994,6 +995,21 @@
             fadeOutDelay: 500
         });
         });
+
+
+
+        document.querySelectorAll('.auto-typing-multi').forEach(function(element) {
+        let textes = element.getAttribute('data-text').split(';').map(t => t.trim());
+
+        new Typed(element, {
+            strings: textes,
+            typeSpeed: 80,
+            backSpeed: 50,
+            backDelay: 1200,
+            loop: true
+        });
+        });
+
     </script>
 </body>
 
